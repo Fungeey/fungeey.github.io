@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Overpass:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id = "firstScreen">
+        <h1> Aaron Lee </h1>
+        <div id = "links">
+            <a class = "plainLink" href = "mailto:aaronkyl5@gmail.com">email</a>
+            <a class = "plainLink" href = "Aaron_Lee_Resume.pdf">resume</a>
+            <a class = "plainLink" href = "https://github.com/Fungeey/">github</a>
+            <a class = "plainLink" href = "https://www.linkedin.com/in/aaron-lee-3382601b8/">linkedin</a>
+        </div>
+    </div>
+
+    <div id = "projects">
+        <div id = "sidebar">
+            <div id = "sideLinks">
+                <a class = "plainLink" href = "mailto:aaronkyl5@gmail.com">email</a>
+                <a class = "plainLink" href = "Aaron_Lee_Resume.pdf">resume</a>
+                <a class = "plainLink" href = "https://github.com/Fungeey/">github</a>
+                <a class = "plainLink" href = "https://www.linkedin.com/in/aaron-lee-3382601b8/">linkedin</a>
+            </div>
+        </div>
+    
+        <div id = "projectsContent">
+            <h2>Projects</h2>
+            <br>
+
+            <div class = "projectGrid">
+                <div class = "gridContainer">
+                    <h3>Minesweeper</h3>
+                    <a href = "https://github.com/Fungeey/Minesweeper"><img src = "img/git.png" class = "gitImg"></a>
+                    <img src = "img/minesweeper.png" class = "projImg">
+                    <p>A final project made in high school.</p>
+                    <mark>Java</mark>
+                </div>
+                <div class = "gridContainer">
+                    <h3>Boids</h3>
+                    <a href = "https://github.com/Fungeey/MonoBoids"><img src = "img/git.png" class = "gitImg"></a>
+                    <img src = "img/boids.gif" class = "projImg">
+                    <p>A prototype flocking simulator with the famous <a href = "https://en.wikipedia.org/wiki/Boids">boids algorithm</a>. </p>
+                    <mark>C#</mark>
+                </div>
+                <div class = "gridContainer">
+                    <h3>Chess</h3>
+                    <a href = "https://github.com/Fungeey/Chess"><img src = "img/git.png" class = "gitImg"></a>
+                    <img src = "img/chess.gif" class = "projImg">
+                    <p>An (unfinished) chess engine.</p>
+                    <mark>C#</mark>
+                </div>
+                <div class = "gridContainer">
+                    <h3>Neural Network XOR Solver</h3>
+                    <a href = "https://github.com/Fungeey/perceptronxor"><img src = "img/git.png" class = "gitImg"></a>
+                    <img src = "img/nn.gif" class = "projImg">
+                    <p>
+                        A neural network that learns to implement an XOR gate. <br>
+                        <a href = "https://fungeey.github.io/perceptronxor/">demo</a>
+                    </p>
+                    <div class = "tags">
+                        <mark>Javascript</mark>
+                        <mark>CSS</mark>
+                        <mark>HTML</mark>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <br>
+            <br>
+            <h3>miscellaneous</h3>
+            <br>
+
+            <div class = "gallery">
+                <img src = "img/gallery.png" class = "galleryImg">
+            </div>
+
+            <br><br><br><br> -->
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script type = "module" src = "main.js"></script>
+</body>
+</html>
