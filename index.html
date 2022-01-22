@@ -7,25 +7,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Overpass:wght@100;400&display=swap" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script> -->
 </head>
 
 <body>
-    <div id = "firstScreen">
-        <div id = "nameTitle">
-            <h1> Aaron Lee </h1>
-            <img src = "img/dogjumpbig.gif" id = "dog">
+    <div id = "main">
+        <div id = "firstScreen">
+            <div id = "nameTitle">
+                <h1> Aaron Lee </h1>
+                <img src = "img/dogjumpbig.gif" id = "dog">
+                
+            </div>
+            <p id = "introBlurb">Hi! I'm a software developer taking a bachelor's degree in computer engineering. I expect to graduate in 2025.</p>
+            <div id = "links">
+                <a class = "plainLink" href = "mailto:aaronkyl5@gmail.com">email</a>
+                <a class = "plainLink" href = "Aaron_Lee_Resume.pdf">resume</a>
+                <a class = "plainLink" href = "https://github.com/Fungeey/">github</a>
+                <a class = "plainLink" href = "https://www.linkedin.com/in/aaron-lee-3382601b8/">linkedin</a>
+            </div>
+            <br><br>
+            <img src = "img/arrow.png" id = "downArrow">
         </div>
-        <div id = "links">
-            <a class = "plainLink" href = "mailto:aaronkyl5@gmail.com">email</a>
-            <a class = "plainLink" href = "Aaron_Lee_Resume.pdf">resume</a>
-            <a class = "plainLink" href = "https://github.com/Fungeey/">github</a>
-            <a class = "plainLink" href = "https://www.linkedin.com/in/aaron-lee-3382601b8/">linkedin</a>
-        </div>
-        <br><br>
-        <img src = "img/arrow.png" id = "downArrow">
     </div>
 
-    <div id = "projects">
+    <div id = "content">
         <div id = "sidebar">
             <div id = "sideLinks">
                 <a class = "plainLink" href = "mailto:aaronkyl5@gmail.com">email</a>
@@ -34,45 +39,104 @@
                 <a class = "plainLink" href = "https://www.linkedin.com/in/aaron-lee-3382601b8/">linkedin</a>
             </div>
         </div>
-    
-        <div id = "projectsContent">
+        <div id = "projects">
+            <h2>Skills</h2><br>
+            <div id = "skills">
+                <div id = "skillTypes">
+                    <button class = "skillButton" id = "languages">Languages</button> 
+                    <button class = "skillButton" id = "technologies">Technologies</button>
+                </div>
+                <div id = "skillItems">
+                        <mark class = "l">C#</mark>
+                        <mark class = "t">Unity Game Engine</mark>
+                        <mark class = "l">C</mark>
+                        <mark class = "t">Android Studio</mark>
+                        <mark class = "l">Javascript</mark>
+                        <mark class = "l">HTML</mark>
+                        <mark class = "t">Firebase</mark>
+                        <mark class = "l">CSS</mark>
+                        <mark class = "t">.NET Framework</mark>
+                        <mark class = "l">Java</mark>
+                        <mark class = "l">Kotlin</mark>
+                </div>
+            </div>
+            <br>
+
+            <h2>Experience</h2><br>
+            <div>
+                <b>Scarborough Chinese Baptist Church</b><br>
+                <i>Program Coordinator</i>
+                <ul>
+                    <li>Designed and executed a 4-week interactive online summer camp for children aged 5 - 10.</li>
+                    <li>Handled all parent - staff communications and registration data for the whole camp.</li>
+                </ul>
+            </div>
+            
+            <br>
+            <div>
+                <b>Genexis Design</b> <br>
+                <i>Software Engineering Intern</i>
+                <ul>
+                    <li>Produced an AR app using C# and Unity to view office layout models at scale in a physical space.</li>
+                    <li>Designed tools to categorize, draw, and label regions of an office blueprint in a WPF app.</li>
+                    <li>Responsible for QA testing and debugging complex programs.</li>
+                </ul>
+                <br>
+            </div>
+                
+
             <h2>Projects</h2>
             <br>
 
             <div class = "projectGrid">
-                <div class = "gridContainer">
-                    <h3>Minesweeper</h3>
-                    <a href = "https://github.com/Fungeey/Minesweeper"><img src = "img/git.png" class = "gitImg"></a>
-                    <img src = "img/minesweeper.gif" class = "projImg">
-                    <p>A final project made in high school.</p>
-                    <mark>Java</mark>
+                <div>
+                    <div class = "gridContainer">
+                        <h3>Neural Network XOR Solver</h3>
+                        <a href = "https://github.com/Fungeey/perceptronxor"><img src = "img/git.png" class = "gitImg"></a>
+                        <img src = "img/nn.gif" class = "projImg">
+                        <p>
+                            A neural network that learns to implement an XOR gate. <br>
+                            <a href = "https://fungeey.github.io/perceptronxor/">demo</a>
+                        </p>
+                        <div class = "tags">
+                            <mark>Javascript</mark>
+                            <mark>CSS</mark>
+                            <mark>HTML</mark>
+                        </div>
+                    </div>
                 </div>
-                <div class = "gridContainer">
-                    <h3>Boids</h3>
-                    <a href = "https://github.com/Fungeey/MonoBoids"><img src = "img/git.png" class = "gitImg"></a>
-                    <img src = "img/boids.gif" class = "projImg">
-                    <p>A prototype flocking simulator with the famous <a href = "https://en.wikipedia.org/wiki/Boids">boids algorithm</a>. </p>
-                    <mark>C#</mark>
+                <div>
+                    <div class = "gridContainer">
+                        <h3>Boids</h3>
+                        <a href = "https://github.com/Fungeey/MonoBoids"><img src = "img/git.png" class = "gitImg"></a>
+                        <img src = "img/boids.gif" class = "projImg">
+                        <p>A prototype flocking simulator with the famous <a href = "https://en.wikipedia.org/wiki/Boids">boids algorithm</a>. </p>
+                        <div class = "tags">
+                            <mark>C#</mark>
+                        </div>
+                    </div>
                 </div>
-                <div class = "gridContainer">
-                    <h3>Chess</h3>
-                    <a href = "https://github.com/Fungeey/Chess"><img src = "img/git.png" class = "gitImg"></a>
-                    <img src = "img/chess.gif" class = "projImg">
-                    <p>An (unfinished) chess engine.</p>
-                    <mark>C#</mark>
+                
+                <div>
+                    <div class = "gridContainer">
+                        <h3>Chess</h3>
+                        <a href = "https://github.com/Fungeey/Chess"><img src = "img/git.png" class = "gitImg"></a>
+                        <img src = "img/chess.gif" class = "projImg">
+                        <p>An (unfinished) chess engine.</p>
+                        <div class = "tags">
+                            <mark>C#</mark>
+                        </div>
+                    </div>
                 </div>
-                <div class = "gridContainer">
-                    <h3>Neural Network XOR Solver</h3>
-                    <a href = "https://github.com/Fungeey/perceptronxor"><img src = "img/git.png" class = "gitImg"></a>
-                    <img src = "img/nn.gif" class = "projImg">
-                    <p>
-                        A neural network that learns to implement an XOR gate. <br>
-                        <a href = "https://fungeey.github.io/perceptronxor/">demo</a>
-                    </p>
-                    <div class = "tags">
-                        <mark>Javascript</mark>
-                        <mark>CSS</mark>
-                        <mark>HTML</mark>
+                <div>
+                    <div class = "gridContainer">
+                        <h3>Minesweeper</h3>
+                        <a href = "https://github.com/Fungeey/Minesweeper"><img src = "img/git.png" class = "gitImg"></a>
+                        <img src = "img/minesweepercropped.gif" class = "projImg">
+                        <p>A final project made in high school.</p>
+                        <div class = "tags">
+                            <mark>Java</mark>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,6 +156,6 @@
 
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <script type = "module" src = "main.js"></script>
+    <script src = "main.js" type = "module"></script>
 </body>
 </html>
