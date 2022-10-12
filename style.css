@@ -7,6 +7,10 @@
     --radius: 1rem;
 }
 
+::selection {
+    background: var(--green);
+  }
+
 *{
     font-family: 'Overpass', sans-serif;
     color: var(--text);
