@@ -20,7 +20,8 @@ h1{
 
 p{
     line-height: 150%; 
-    margin:0;   
+    margin:0;
+    font-size:15px;
 }
 
 body{
@@ -211,14 +212,21 @@ h2{
 .gridContainer{
     background: var(--grey);
     padding:1rem;
-    position:relative;
+    margin:1rem;
     box-shadow: 5px 5px 10px var(--darkgrey);
 }
 
 .gridContainer:hover{
     box-shadow: 5px 5px 10px var(--darkergrey);
-    transform: rotate(1deg);
+    outline:2px solid #c0c0c0;
 }
+
+.gridContainer:hover > h3{
+    background-color: #9dda92;
+}
+
+.grid-item { width: 300px; }
+.grid-item--width2 { width: 600px; }
 
 h3{
     font-size: 25px;
@@ -255,8 +263,8 @@ mark{
     width:1.25rem;
     height:1.25rem;
     position:absolute;
-    bottom:1rem;
-    right:1rem;
+    bottom:2rem;
+    right:2rem;
 }
 
 .gallery{
