@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Overpass:wght@100;400&display=swap" rel="stylesheet">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script> -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src = "main.js" type = "module"></script>
 </head>
 
 <body>
@@ -90,6 +92,7 @@
             <br>
 
             <div class = "projectGrid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 300 }'>
+                <div class="grid-sizer"></div>
                 <div class = 'grid-item grid-item grid-item--width2'>
                     <div class = "gridContainer">
                         <h3>Neural Network XOR Solver</h3>
@@ -221,8 +224,5 @@
             <br><br><br><br> -->
         </div>
     </div>
-
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    <script src = "main.js" type = "module"></script>
 </body>
 </html>
