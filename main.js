@@ -25,7 +25,6 @@ function unfade(element) {
 }
 
 
-
 // let options = {preset: "bigCircles"};
 // tsParticles.load('body', options);
 // (async () => {
