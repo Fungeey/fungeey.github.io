@@ -9,233 +9,252 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Overpass:wght@100;400&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-snow@2/tsparticles.preset.snow.bundle.min.js"></script>
     <script src = "main.js" type = "module"></script>
 </head>
 
 <body>
     <div id = "main">
         <div id = "firstScreen">
+            <img src = "img/dogjump.gif" id = "dog">
             <div id = "nameTitle">
-                <h1> Aaron Lee </h1>
-                <img src = "img/dogjumpbig.gif" id = "dog">
-                
+                <h1> aaron lee</h1>            
             </div>
-            <p id = "introBlurb" style = 'font-size: 17px;'>Hi! I'm currently studying software engineering. <br> I expect to graduate in 2025.</p>
+            
+            <p id = "introBlurb">is studying software engineering
             <div id = "links">
                 <a class = "plainLink" href = "mailto:aaronkyl5@gmail.com">email</a>
                 <a class = "plainLink" target="_blank" rel="noopener noreferrer" href = "Aaron_Lee_Resume.pdf">resume</a>
                 <a class = "plainLink" target="_blank" rel="noopener noreferrer" href = "https://github.com/Fungeey/">github</a>
-                <a class = "plainLink" target="_blank" rel="noopener noreferrer" href = "https://www.linkedin.com/in/aaron-lee-3382601b8/">linkedin</a>
+                <a class = "plainLink" target="_blank" rel="noopener noreferrer" href = "www.linkedin.com/in/aaronklee">linkedin</a>
             </div>
             <br><br>
             <img src = "img/arrow.png" id = "downArrow">
         </div>
     </div>
-
-    <div id = "content">
-        <div id = "sidebar">
-            <div id = "sideLinks">
-                <a class = "plainLink" href = "mailto:aaronkyl5@gmail.com">email</a>
-                <a class = "plainLink" target="_blank" rel="noopener noreferrer" href = "Aaron_Lee_Resume.pdf">resume</a>
-                <a class = "plainLink" target="_blank" rel="noopener noreferrer" href = "https://github.com/Fungeey/">github</a>
-                <a class = "plainLink" target="_blank" rel="noopener noreferrer" href = "https://www.linkedin.com/in/aaron-lee-3382601b8/">linkedin</a>
-                <img src = "img/dogjumpbig.gif" id = "dog">
-            </div>
-        </div>
-        <div id = "projects">
-            <!-- <h2>Skills</h2><br>
-            <div id = "skills">
-                <div id = "skillTypes">
-                    <button class = "skillButton" id = "languages">Languages</button> 
-                    <button class = "skillButton" id = "technologies">Technologies</button>
-                </div>
-                <div id = "skillItems">
-                        <mark class = "l">C#</mark>
-                        <mark class = "t">Unity Game Engine</mark>
-                        <mark class = "l">C</mark>
-                        <mark class = "t">Android Studio</mark>
-                        <mark class = "l">Javascript</mark>
-                        <mark class = "l">HTML</mark>
-                        <mark class = "t">Firebase</mark>
-                        <mark class = "l">CSS</mark>
-                        <mark class = "t">.NET Framework</mark>
-                        <mark class = "l">Java</mark>
-                        <mark class = "l">Kotlin</mark>
-                </div>
-            </div>
-            <br> -->
-
-            <!-- <h2>Experience</h2><br>
-            <div>
-                <b>Scarborough Chinese Baptist Church</b><br>
-                <i>Program Coordinator</i>
-                <ul>
-                    <li>Designed and executed a 4-week interactive online summer camp for children aged 5 - 10.</li>
-                    <li>Handled all parent - staff communications and registration data for the whole camp.</li>
-                </ul>
-            </div>
-            
-            <br>
-            <div>
-                <b>Genexis Design</b> <br>
-                <i>Software Engineering Intern</i>
-                <ul>
-                    <li>Produced an AR app using C# and Unity to view office layout models at scale in a physical space.</li>
-                    <li>Designed tools to categorize, draw, and label regions of an office blueprint in a WPF app.</li>
-                    <li>Responsible for QA testing and debugging complex programs.</li>
-                </ul>
+    <div id = "notMain">
+        <br>
+        <br>
+        <br>
+        <h2 style = "text-align: center; font-size:100px; font-weight:100">stuff i made</h2>
+        <div id = "content">
+            <div id = "sidebar">
                 <br>
-            </div> -->
-                
-
-            <h2>Projects</h2>
-            <br>
-
-            <div class = "projectGrid">
-                <div class="grid-sizer"></div>
-                <div class = 'grid-item grid-item grid-item--width2'>
-                    <div class = "gridContainer">
-                        <h3>Neural Network XOR Solver</h3>
-                        <a href = "https://github.com/Fungeey/perceptronxor"><img src = "img/git.png" class = "gitImg"></a>
-                        <img src = "img/nn.gif" class = "projImg">
-                        <p>
-                            A neural network that learns to implement an XOR gate. <br>
-                            <a href = "https://fungeey.github.io/perceptronxor/">demo</a>
-                        </p>
-                        <div class = "tags">
-                            <mark>Javascript</mark>
-                            <mark>HTML</mark>
-                            <mark>CSS</mark>
-                        </div>
+                <div id = "sideLinks">
+                    <a class = "plainLink" href = "mailto:aaronkyl5@gmail.com">email</a>
+                    <a class = "plainLink" target="_blank" rel="noopener noreferrer" href = "Aaron_Lee_Resume.pdf">resume</a>
+                    <a class = "plainLink" target="_blank" rel="noopener noreferrer" href = "https://github.com/Fungeey/">github</a>
+                    <a class = "plainLink" target="_blank" rel="noopener noreferrer" href = "www.linkedin.com/in/aaronklee">linkedin</a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img src = "img/dogidle.gif" id = "dogIdle">
+                    <div id = "dogCircle"></div>
+                </div>
+            </div>
+            <div id = "projects">
+                <!-- <h2>Skills</h2><br>
+                <div id = "skills">
+                    <div id = "skillTypes">
+                        <button class = "skillButton" id = "languages">Languages</button> 
+                        <button class = "skillButton" id = "technologies">Technologies</button>
+                    </div>
+                    <div id = "skillItems">
+                            <mark class = "l">C#</mark>
+                            <mark class = "t">Unity Game Engine</mark>
+                            <mark class = "l">C</mark>
+                            <mark class = "t">Android Studio</mark>
+                            <mark class = "l">Javascript</mark>
+                            <mark class = "l">HTML</mark>
+                            <mark class = "t">Firebase</mark>
+                            <mark class = "l">CSS</mark>
+                            <mark class = "t">.NET Framework</mark>
+                            <mark class = "l">Java</mark>
+                            <mark class = "l">Kotlin</mark>
                     </div>
                 </div>
-                <div class = 'grid-item'>
-                    <div class = "gridContainer">
-                        <h3>Command Line Roguelike</h3>
-                        <img src = "img/arrowgame.gif" class = "projImg">
-                        <p>The first project I ever made, using the console output. It features randomly generated levels!</p>
-                        <div class = "tags">
-                            <mark>C#</mark>
-                        </div>
-                    </div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = "gridContainer">
-                        <h3>Chess</h3>
-                        <a href = "https://github.com/Fungeey/Chess"><img src = "img/git.png" class = "gitImg"></a>
-                        <img src = "img/chess.gif" class = "projImg">
-                        <p>An (unfinished) chess engine. Here the computer is playing against itself, by choosing random (but valid) moves. The computer
-                            doesn't know how to rank the possible moves and choose the best one yet. 
-                        </p>
-                        <div class = "tags">
-                            <mark>C#</mark>
-                            <mark>MonoGame</mark>
-                        </div>
-                    </div>
+                <br> -->
+
+                <!-- <h2>Experience</h2><br>
+                <div>
+                    <b>Scarborough Chinese Baptist Church</b><br>
+                    <i>Program Coordinator</i>
+                    <ul>
+                        <li>Designed and executed a 4-week interactive online summer camp for children aged 5 - 10.</li>
+                        <li>Handled all parent - staff communications and registration data for the whole camp.</li>
+                    </ul>
                 </div>
                 
-                <div class = 'grid-item'>
-                    <div class = "gridContainer">
-                        <h3>Dialogue System</h3>
-                        <img src = "img/dialogue.gif" class = "projImg">
-                        <p>I made this dialogue system for a game I was hoping to make but never finished. </p>
-                        <img src = "img/gibberish.gif" class = "projImg">
+                <br>
+                <div>
+                    <b>Genexis Design</b> <br>
+                    <i>Software Engineering Intern</i>
+                    <ul>
+                        <li>Produced an AR app using C# and Unity to view office layout models at scale in a physical space.</li>
+                        <li>Designed tools to categorize, draw, and label regions of an office blueprint in a WPF app.</li>
+                        <li>Responsible for QA testing and debugging complex programs.</li>
+                    </ul>
+                    <br>
+                </div> -->
 
-                        <p>The concept was you would have to talk to npcs who speak an unknown language,
-                        and slowly by interacting with them you would learn the meaning of words one at a time, which would then be replaced with english words.</p>
-                        <div class = "tags">
-                            <mark>C#</mark>
-                            <mark>Unity</mark>
-                        </div>
-                    </div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = "gridContainer">
-                        <h3>Personal Website</h3>
-                        <a href = "https://github.com/Fungeey/fungeey.github.io"><img src = "img/git.png" class = "gitImg"></a>
-                        <img src = "img/website.gif" class = "projImg">
-                        <p>The website you are viewing right now!</p>
-                        <div class = "tags">
-                            <mark>Javascript</mark>
-                            <mark>HTML</mark>
-                            <mark>CSS</mark>
-                        </div>
-                    </div>
-                </div>
-                <div class = 'grid-item grid-item grid-item--width2'>
-                    <div class = "gridContainer">
-                        <h3>Car System</h3>
-                        <a href = "https://github.com/Fungeey/IceCreamJam"><img src = "img/git.png" class = "gitImg"></a>
-                        <img src = "img/cars.gif" class = "projImg">
-                        <p>For a game jam, I created an automatic system to allow cars to drive along a network of roads to a random destination. Each intersection acts like a four-way stop.</p>
-                        <div class = "tags">
-                            <mark>C#</mark>
-                            <mark>MonoGame</mark>
-                        </div>
-                    </div>
-                </div>
-                <div class = 'grid-item grid-item grid-item--width2'>
-                    <div class = "gridContainer">
-                        <h3>Spherical World</h3>
-                        <img src = "img/sphericalworld.gif" class = "projImg">
-                        <p>This is a 3D world where the planet is inside-out.</p>
-                        <div class = "tags">
-                            <mark>C#</mark>
-                            <mark>Unity</mark>
-                        </div>
-                    </div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = "gridContainer">
-                        <h3>Minesweeper</h3>
-                        <a href = "https://github.com/Fungeey/Minesweeper"><img src = "img/git.png" class = "gitImg"></a>
-                        <img src = "img/minesweepercropped.gif" class = "projImg">
-                        <p>A final project made in high school.</p>
-                        <div class = "tags">
-                            <mark>Java</mark>
-                            <mark>LibGDX</mark>
-                        </div>
-                    </div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = "gridContainer">
-                        <h3>Boids</h3>
-                        <a href = "https://github.com/Fungeey/MonoBoids"><img src = "img/git.png" class = "gitImg"></a>
-                        <img src = "img/boids.gif" class = "projImg">
-                        <p>A prototype flocking simulator with the <a href = "https://en.wikipedia.org/wiki/Boids">boids algorithm</a>. </p>
-                        <div class = "tags">
-                            <mark>C#</mark>
-                            <mark>MonoGame</mark>
-                        </div>
-                    </div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = "gridContainer">
-                        <h3>Gravekeeper</h3>
-                        <a href = "https://github.com/Fungeey/GravekeeperGame"><img src = "img/git.png" class = "gitImg"></a>
-                        <img src = "img/grave.gif" class = "projImg">
-                        <p>An extremely claustrophobic <a href ="https://en.wikipedia.org/wiki/Sokoban">sokoban</a> style game I made in one week with my friend. 
-                            You play as a gravekeeper who's goal is to place souls in graves. However, space is very limited because once graves are full, they become solid blocks.
+                <div class = "projectGrid">
+                    <div class="grid-sizer"></div>
+                    <div class = 'grid-item grid-item grid-item--width2'>
+                        <div class = "gridContainer">
+                            <h3>Neural Network XOR Solver</h3>
+                            <a href = "https://github.com/Fungeey/perceptronxor"><img src = "img/git.png" class = "gitImg"></a>
+                            <img src = "img/nn.gif" class = "projImg">
+                            <p>
+                                A neural network that learns to implement an XOR gate. <br>
+                                <a href = "https://fungeey.github.io/perceptronxor/">demo</a>
                             </p>
-                        <div class = "tags">
-                            <mark>C#</mark>
-                            <mark>Unity</mark>
+                            <div class = "tags">
+                                <mark>Javascript</mark>
+                                <mark>HTML</mark>
+                                <mark>CSS</mark>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = 'grid-item'>
+                        <div class = "gridContainer">
+                            <h3>Command Line Roguelike</h3>
+                            <img src = "img/arrowgame.gif" class = "projImg">
+                            <p>The first project I ever made, using the console output. It features randomly generated levels!</p>
+                            <div class = "tags">
+                                <mark>C#</mark>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = 'grid-item'>
+                        <div class = "gridContainer">
+                            <h3>Chess</h3>
+                            <a href = "https://github.com/Fungeey/Chess"><img src = "img/git.png" class = "gitImg"></a>
+                            <img src = "img/chess.gif" class = "projImg">
+                            <p>An (unfinished) chess engine. Here the computer is playing against itself, by choosing random (but valid) moves. The computer
+                                doesn't know how to rank the possible moves and choose the best one yet. 
+                            </p>
+                            <div class = "tags">
+                                <mark>C#</mark>
+                                <mark>MonoGame</mark>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class = 'grid-item'>
+                        <div class = "gridContainer">
+                            <h3>Dialogue System</h3>
+                            <img src = "img/dialogue.gif" class = "projImg">
+                            <p>I made this dialogue system for a game I was hoping to make but never finished. </p>
+                            <img src = "img/gibberish.gif" class = "projImg">
+
+                            <p>The concept was you would have to talk to npcs who speak an unknown language,
+                            and slowly by interacting with them you would learn the meaning of words one at a time, which would then be replaced with english words.</p>
+                            <div class = "tags">
+                                <mark>C#</mark>
+                                <mark>Unity</mark>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = 'grid-item'>
+                        <div class = "gridContainer">
+                            <h3>Personal Website</h3>
+                            <a href = "https://github.com/Fungeey/fungeey.github.io"><img src = "img/git.png" class = "gitImg"></a>
+                            <img src = "img/website.gif" class = "projImg">
+                            <p>The website you are viewing right now!</p>
+                            <div class = "tags">
+                                <mark>Javascript</mark>
+                                <mark>HTML</mark>
+                                <mark>CSS</mark>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class = 'grid-item grid-item--width2'>
+                        <div class = "gridContainer">
+                            <h3>Car System</h3>
+                            <a href = "https://github.com/Fungeey/IceCreamJam"><img src = "img/git.png" class = "gitImg"></a>
+                            <img src = "img/cars.gif" class = "projImg">
+                            <p>For a game jam, I created an automatic system to allow cars to drive along a network of roads to a random destination. Each intersection acts like a four-way stop.</p>
+                            <div class = "tags">
+                                <mark>C#</mark>
+                                <mark>MonoGame</mark>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = 'grid-item grid-item--tiny'>
+                        <div class = "gridContainer">
+                            🌱🌿🌎🌲🍂🌱🐢🎍🌳🍀🌿
+                        </div>
+                    </div>
+                    <div class = 'grid-item grid-item--width2'>
+                        <div class = "gridContainer">
+                            <h3>Spherical World</h3>
+                            <img src = "img/sphericalworld.gif" class = "projImg">
+                            <p>This is a 3D world where the planet is inside-out.</p>
+                            <div class = "tags">
+                                <mark>C#</mark>
+                                <mark>Unity</mark>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = 'grid-item'>
+                        <div class = "gridContainer">
+                            <h3>Minesweeper</h3>
+                            <a href = "https://github.com/Fungeey/Minesweeper"><img src = "img/git.png" class = "gitImg"></a>
+                            <img src = "img/minesweepercropped.gif" class = "projImg">
+                            <p>A final project made in high school.</p>
+                            <div class = "tags">
+                                <mark>Java</mark>
+                                <mark>LibGDX</mark>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = 'grid-item'>
+                        <div class = "gridContainer">
+                            <h3>Boids</h3>
+                            <a href = "https://github.com/Fungeey/MonoBoids"><img src = "img/git.png" class = "gitImg"></a>
+                            <img src = "img/boids.gif" class = "projImg">
+                            <p>A prototype flocking simulator with the <a href = "https://en.wikipedia.org/wiki/Boids">boids algorithm</a>. </p>
+                            <div class = "tags">
+                                <mark>C#</mark>
+                                <mark>MonoGame</mark>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = 'grid-item'>
+                        <div class = "gridContainer">
+                            <h3>Gravekeeper</h3>
+                            <a href = "https://github.com/Fungeey/GravekeeperGame"><img src = "img/git.png" class = "gitImg"></a>
+                            <img src = "img/grave.gif" class = "projImg">
+                            <p>An extremely claustrophobic <a href ="https://en.wikipedia.org/wiki/Sokoban">sokoban</a> style game I made in one week with my friend. 
+                                You play as a gravekeeper who's goal is to place souls in graves. However, space is very limited because once graves are full, they become solid blocks.
+                                </p>
+                            <div class = "tags">
+                                <mark>C#</mark>
+                                <mark>Unity</mark>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- <br>
+                <br>
+                <h3>miscellaneous</h3>
+                <br>
+
+                <div class = "gallery">
+                    <img src = "img/gallery.png" class = "galleryImg">
+                </div>
+
+                <br><br><br><br> -->
             </div>
-
-            <!-- <br>
-            <br>
-            <h3>miscellaneous</h3>
-            <br>
-
-            <div class = "gallery">
-                <img src = "img/gallery.png" class = "galleryImg">
-            </div>
-
-            <br><br><br><br> -->
         </div>
     </div>
+    <div id ="footer">
+        💚
+    </div>
+
 </body>
 </html>
