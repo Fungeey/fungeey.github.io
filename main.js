@@ -4,7 +4,8 @@ let grid = document.querySelector('.projectGrid');
 imagesLoaded(grid, () => {
     let masonry = new Masonry(grid, {
         itemSelector: '.grid-item',
-        columnWidth: 300
+        columnWidth: 300,
+        isFitWidth: true
     })
     
     unfade(document.querySelector('#projects'));

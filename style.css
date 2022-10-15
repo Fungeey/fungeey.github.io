@@ -2,6 +2,7 @@
     --text: #333333;
     --green: #9dda92;
     --grey: #f1f1f1;
+    --grey2: #f6f6f6;
     --darkgrey: #e1e1e1;
     --darkergrey: #c0c0c0;
     --radius: 1rem;
@@ -53,6 +54,16 @@ a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#notMain{
+    background: repeating-linear-gradient(
+        4deg,
+        #fafafa,
+        #fafafa 100px,
+        white 10px,
+        white 200px
+    );
 }
 
 #nameTitle{
@@ -240,22 +251,20 @@ h2{
 }
 
 .projectGrid{
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    grid-template-rows: auto;
+    /* display:grid; */
     gap:1rem;
+    margin:0 auto;
 }
 
 .gridContainer{
     background: var(--grey);
     padding:1rem;
     margin:1rem;
-    box-shadow: 5px 5px 10px var(--darkgrey);
+    box-shadow: 0 0 10px var(--darkergrey);
 }
 
 .gridContainer:hover{
-    box-shadow: 5px 5px 10px var(--darkergrey);
-    outline:5px solid var(--green);
+    /* outline:5px solid var(--darkergrey); */
 }
 
 .gridContainer:hover > h3{
@@ -316,10 +325,10 @@ mark{
 #footer{
     text-align:center;
     padding:2rem;
-    background-color: var(--grey);
+    background-color: #fbfbfb;
 }
 
-@media only screen and (max-width: 860px) {
+/* @media only screen and (max-width: 860px) {
     #sidebar{
         display:none;
     }
@@ -337,9 +346,9 @@ mark{
         margin: auto;
         width:80%;
     }
-}
+} */
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 860px) {
     #sidebar{
         display:none;
     }
@@ -353,8 +362,8 @@ mark{
     #downArrow{
         /* display: none; */
     }
-    .grid-item { width: 100%; }
-    .grid-item--width2 { width: 100%; }
+    /* .grid-item { width: 100%; }
+    .grid-item--width2 { width: 100%; } */
 }
 
 @media only screen and (max-width: 450px) {
