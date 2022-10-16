@@ -246,6 +246,21 @@ h2{
     font-size: 30px;
 }
 
+.glitch{
+    font-size:100px;
+    font-weight:100;
+    text-align: center;
+    width:100%;
+    color:var(--green);
+}
+
+.glitch::before{
+    content: 'stuff i made';
+    position:absolute;
+    color:var(--text);
+    transform:translate(-3px, -3px);
+}
+
 .highlight{
     background: var(--green);
 }
