@@ -251,15 +251,15 @@ h2{
     font-weight:100;
     text-align: center;
     width:100%;
-    color:var(--green);
+    /* color:var(--green); */
 }
 
-.glitch::before{
+/* .glitch::before{
     content: 'stuff i made';
     position:absolute;
     color:var(--text);
     transform:translate(-3px, -3px);
-}
+} */
 
 .highlight{
     background: var(--green);
@@ -377,16 +377,29 @@ mark{
     #downArrow{
         /* display: none; */
     }
-    /* .grid-item { width: 100%; }
-    .grid-item--width2 { width: 100%; } */
+    .grid-item { width: 100%; }
+    .grid-item--width2 { width: 100%; }
 }
 
 @media only screen and (max-width: 450px) {
+    #sidebar{
+        display:none;
+    }
+    #content{
+        width: 100%;
+        max-width: 100%;
+    }
+    #projects{
+        padding: 1.5rem;
+    }
     #nameTitle{
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
     }
+    .grid-item { width: 100%; }
+    .grid-item--width2 { width: 100%; }
+    
     #links{
         gap:1.25rem;
     }
