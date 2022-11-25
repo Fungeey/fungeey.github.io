@@ -279,7 +279,7 @@ h2{
 }
 
 .gridContainer:hover{
-    /* outline:5px solid var(--darkergrey); */
+    
 }
 
 .gridContainer:hover > h3{
