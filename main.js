@@ -2,15 +2,15 @@
 // Reload Masonry when images are loaded
 let grid = document.querySelector('.projectGrid');
 imagesLoaded(grid, () => {
-    let masonry = new Masonry(grid, {
-        itemSelector: '.grid-item',
-        columnWidth: 300,
-        isFitWidth: true
-    })
-    
+    var pckry = new Packery( grid, {
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 300,
+    isFitWidth: true,
+    gutter: 10
+    });
     unfade(document.querySelector('#projects'));
 })
-
 
 function unfade(element) {
     var op = 0.1;  // initial opacity
