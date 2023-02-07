@@ -7,10 +7,13 @@ imagesLoaded(grid, () => {
     itemSelector: '.grid-item',
     columnWidth: 300,
     isFitWidth: true,
-    gutter: 10
+    gutter: 0
     });
     unfade(document.querySelector('#projects'));
 })
+
+// unfade each image one at a time
+//https://stackoverflow.com/questions/280049/how-to-create-a-javascript-callback-for-knowing-when-an-image-is-loaded
 
 function unfade(element) {
     var op = 0.1;  // initial opacity

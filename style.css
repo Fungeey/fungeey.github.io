@@ -248,7 +248,7 @@ h2{
 }
 
 .glitch{
-    font-size:100px;
+    font-size:80px;
     font-weight:100;
     text-align: center;
     width:100%;
@@ -256,10 +256,10 @@ h2{
 }
 
 /* .glitch::before{
-    content: 'stuff i made';
+    content: 'projects';
     position:absolute;
     color:var(--text);
-    transform:translate(-3px, -3px);
+    transform:translate(-2px, -2px);
 } */
 
 .highlight{
@@ -277,6 +277,7 @@ h2{
     padding:1rem;
     margin:1rem;
     box-shadow: 0 0 10px var(--darkergrey);
+    border-radius: 0.25rem;
 }
 
 .gridContainer:hover{
