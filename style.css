@@ -305,6 +305,7 @@ mark{
     background: var(--green);
     padding:0 0.4em;
     border-radius: 1rem;
+    filter: grayscale(100%);
 }
 
 .projImg{
@@ -312,7 +313,16 @@ mark{
     margin: 0.5rem 0 1rem;
     display:block;
     /* box-shadow: 2px 2px 5px var(--darkergrey); */
+    filter: grayscale(0%);
 }
+/* 
+.gridContainer:hover > .projImg{
+    filter: grayscale(0%);
+}
+
+.gridContainer:hover > .tags > mark{
+    filter: grayscale(0%);
+} */
 
 .tags{
     margin-top: 0.5rem;
