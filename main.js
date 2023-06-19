@@ -125,7 +125,7 @@ function initPackery(){
     gutter: 0
     });
 
-    unfade(document.querySelector('#projects'));
+    // unfade(document.querySelector('#projects'));
 }
 
 
