@@ -79,6 +79,7 @@ let projects = [
     }
 ]
 
+
 function showContent(){
     let projectGrid = document.getElementsByClassName("projectGrid")[0];
 
@@ -94,7 +95,10 @@ function showContent(){
         let gridContainer = newProjectItem.querySelector(".gridContainer");
         gridContainer.querySelector("h3").innerHTML = projects[i].title;
         gridContainer.querySelector("p").innerHTML = projects[i].description;
-        gridContainer.querySelector(".projImg").src = "img/" + projects[i].imgSRC;
+        
+        let img = gridContainer.querySelector(".projImg");
+        img.src = "img/" + projects[i].imgSRC;
+        img.addEventListener('load', initPackery)
 
         if(projects[i].gitLink){
             gridContainer.querySelector("a").href = projects[i].gitLink;
@@ -114,10 +118,11 @@ showContent();
 
 // Reload Masonry when images are loaded
 let grid = document.querySelector('.projectGrid');
-imagesLoaded(grid, initPackery);
+// initPackery()
+// imagesLoaded(grid, initPackery);
 
 function initPackery(){
-
+    console.log("asdf");
     var pckry = new Packery( grid, {
     itemSelector: '.grid-item',
     columnWidth: 300,
@@ -125,7 +130,7 @@ function initPackery(){
     gutter: 0
     });
 
-    // unfade(document.querySelector('#projects'));
+    unfade(document.querySelector('#projects'));
 }
 
 
