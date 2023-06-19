@@ -118,8 +118,6 @@ showContent();
 
 // Reload Masonry when images are loaded
 let grid = document.querySelector('.projectGrid');
-// initPackery()
-// imagesLoaded(grid, initPackery);
 
 function initPackery(){
     console.log("asdf");
@@ -129,10 +127,7 @@ function initPackery(){
     isFitWidth: true,
     gutter: 0
     });
-
-    unfade(document.querySelector('#projects'));
 }
-
 
 // unfade each image one at a time
 //https://stackoverflow.com/questions/280049/how-to-create-a-javascript-callback-for-knowing-when-an-image-is-loaded
