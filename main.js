@@ -4,14 +4,14 @@ let projects = [
         title: "digital art gallery",
         gitLink: "https://github.com/Fungeey/artgallery",
         imgSRC: "gallery.gif",
-        description: "A digital art gallery showcasing my sister's art. <br> <a href = 'https://fungeey.github.io/artgallery/'>check it out!</a>",
+        description: "A digital art gallery showcasing my sister's art. <br> <a href = 'https://fungeey.github.io/artgallery/' target='_blank'>check it out!</a>",
         tags: ["Javascript", "HTML", "CSS", "Three.js"]
     },
     {
         title: "neural network xor solver",
         gitLink: "https://github.com/Fungeey/perceptronxor",
         imgSRC: "nn.gif",
-        description: "A neural network that learns to implement an XOR gate. <br> <a href = 'https://fungeey.github.io/perceptronxor/'>demo</a>",
+        description: "A neural network that learns to implement an XOR gate. <br> <a target='_blank' href = 'https://fungeey.github.io/perceptronxor/'>demo</a>",
         tags: ["Javascript", "HTML", "CSS"]
     },
     {
@@ -32,7 +32,7 @@ let projects = [
         title: "boids",
         gitLink: "https://github.com/Fungeey/MonoBoids",
         imgSRC: "boids.gif",
-        description: "A prototype flocking simulator with the <a href ='https://en.wikipedia.org/wiki/Boids'>boids algorithm</a>. ",
+        description: "A prototype flocking simulator with the <a href ='https://en.wikipedia.org/wiki/Boids' target='_blank'>boids algorithm</a>. ",
         tags: ["C#", "MonoGame"]
     },
     {
@@ -74,7 +74,7 @@ let projects = [
         title: "gravekeeper",
         gitLink: "https://github.com/Fungeey/GravekeeperGame",
         imgSRC: "grave.gif",
-        description: "An extremely claustrophobic <a href ='https://en.wikipedia.org/wiki/Sokoban'>sokoban</a> style game I made in one week with my friend. You play as a gravekeeper who's goal is to place souls in graves. However, space is very limited because once graves are full, they become solid blocks.",
+        description: "An extremely claustrophobic <a href ='https://en.wikipedia.org/wiki/Sokoban' target='_blank'>sokoban</a> style game I made in one week with my friend. You play as a gravekeeper who's goal is to place souls in graves. However, space is very limited because once graves are full, they become solid blocks.",
         tags: ["C#", "Unity"]
     }
 ]
