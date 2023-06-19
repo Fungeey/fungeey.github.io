@@ -281,7 +281,7 @@ h2{
 }
 
 .gridContainer:hover{
-    
+    /* background: #F3FBAD; */
 }
 
 .gridContainer:hover > h3{

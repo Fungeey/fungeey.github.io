@@ -67,7 +67,7 @@ let projects = [
         title: "minesweeper",
         gitLink: "https://github.com/Fungeey/Minesweeper",
         imgSRC: "minesweepercropped.gif",
-        description: "A final project made in high school",
+        description: "A final project made in high school.",
         tags: ["Java", "LibGDX"]
     },
     {
