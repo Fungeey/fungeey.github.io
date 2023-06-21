@@ -18,7 +18,7 @@
 }
 
 h1{
-    font-size: 100px;
+    font-size: 90px;
     font-weight: 400;
     margin:0;
     line-height: 90%;
@@ -280,6 +280,15 @@ h2{
     border-radius: 0.25rem;
 }
 
+.gridContainerHighlight{
+    background: var(--grey);
+    padding:1rem;
+    margin:1rem;
+    box-shadow: 0 0 10px var(--darkergrey);
+    border-radius: 0.25rem;
+    outline: 3px solid var(--darkergrey);
+}
+
 .gridContainer:hover{
     /* background: #F3FBAD; */
 }
@@ -313,6 +322,7 @@ mark{
     display:block;
     /* box-shadow: 2px 2px 5px var(--darkergrey); */
     filter: grayscale(0%);
+    border-radius: 0.2rem;
 }
 /* 
 .gridContainer:hover > .projImg{
