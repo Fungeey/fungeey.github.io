@@ -17,6 +17,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-color: antiquewhite;
 }
 
 #main {
@@ -27,7 +28,7 @@ body {
     flex-direction: row;
     justify-content: center;
     background-color: antiquewhite;
-    background-image:url("img/dust.png");
+    background-image: url("img/dust.png");
 }
 
 h1 {
@@ -40,7 +41,7 @@ h4 {
     background-color: var(--green);
 }
 
-span{
+span {
     background-color: var(--beige);
     border-radius: 1rem;
     padding-left: 5px;
@@ -80,7 +81,11 @@ p {
     justify-content: space-between;
 }
 
-#links > a{
+#links{
+    padding:5px;
+}
+
+#links>a {
     text-decoration: none;
 }
 
@@ -114,4 +119,16 @@ iframe {
 .projImg {
     width: 50%;
     border-radius: 0.5rem;
+}
+
+body::-webkit-scrollbar {
+    width: .75em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: antiquewhite;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--beige);
 }
