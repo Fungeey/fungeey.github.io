@@ -79,16 +79,19 @@ p {
     transform: rotate(-45deg);
 }
 
-#nameTitle {
+.spaceBetween {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: start;
     justify-content: space-between;
 }
 
 #links {
     padding: 5px;
+    display:flex;
+    flex-direction: row;
+    gap:10px;
 }
 
 #links>a {
@@ -100,6 +103,8 @@ hr {
 }
 
 .icon {
+    width:20px;
+    height:20px;
     fill: var(--text);
 }
 
@@ -121,12 +126,6 @@ a:hover {
     flex-grow: 1;
     border: 2px dotted var(--text);
     border-radius: 1rem;
-}
-
-iframe {
-    width: 100%;
-    border: 0px;
-    height: 100vh;
 }
 
 .projImg {
