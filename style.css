@@ -32,8 +32,39 @@ body {
     z-index: -1
 }
 
+.subtitle{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.5rem;
+}
+
+.subtitle > svg{
+    width:30px;
+    height:30px;
+    fill: var(--text);
+}
+
+.subtitle > h3{
+    margin:0px;
+}
+
+.nameTitle{
+    font-family: Space Mono, monospace;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+
+
 h1 {
     margin: 0px;
+    font-family: Space Mono, monospace;
+}
+
+h2{
+    margin:0px;
     font-family: Space Mono, monospace;
 }
 
@@ -129,8 +160,7 @@ a:hover {
 }
 
 .projImg {
-    width: 50%;
-    border-radius: 0.5rem;
+    width: 100%;
 }
 
 .projects {
