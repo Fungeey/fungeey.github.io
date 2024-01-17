@@ -125,8 +125,9 @@ p {
     gap:10px;
 }
 
-#links>a {
+#links>a:hover {
     text-decoration: none;
+    background-color: antiquewhite;
 }
 
 hr {
@@ -137,6 +138,7 @@ hr {
     width:20px;
     height:20px;
     fill: var(--text);
+    border-radius: 1rem;
 }
 
 a:hover {
