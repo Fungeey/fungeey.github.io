@@ -161,13 +161,13 @@ a:hover {
 .project:hover{
     animation-name:flicker;
     animation-duration: 0.1s;
-    outline: 2px dashed lightslategray;
+    outline: 2px dashed var(--text);
     outline-offset: 10px;
 }
 
 @keyframes flicker {
-    0%      {outline: 2px dashed lightgray; outline-offset: 15px;}
-    100%    {outline: 2px dashed lightslategray;}
+    50%      {outline: 2px dashed var(--text); outline-offset: 12px;}
+    100%    {outline: 2px dashed var(--text);}
 }
 
 @media only screen and (max-width: 450px) {
