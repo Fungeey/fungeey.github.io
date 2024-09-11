@@ -22,7 +22,5 @@ let font=[
 
 let j = 0;
 let fontSwitcher = setInterval(function () {
-  j = (j + 1) % fonts.length;
-  // console.log("j: " + j);
-  aaron.style.fontFamily = fonts[j];
+  aaron.style.fontFamily = fonts[(++j) % fonts.length];
 }, 750);
