@@ -26,17 +26,16 @@ function unfade(element) {
 
   var timer = setInterval(function () {
     if (op >= 1 || !element) {
+      element.style.transform = 'none';
+      element.style.opacity = 1;
+      
       clearInterval(timer);
       return;
     }
 
     element.style.opacity = op;
-    // element.style.filter = 'alpha(opacity=' + op * 100 + ")";
     op += op * 0.1;
     element.style.transform = `translate(0px, ${(1 - op) * 3}px)`;
     element.style.transform = 'translateZ(0)';
   }, 10);
-
-  element.style.transform = 'none';
-  // element.style.opacity = 1;
 }
