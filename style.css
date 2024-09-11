@@ -32,39 +32,14 @@ body {
     z-index: -1
 }
 
-.subtitle{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    gap:0.5rem;
-}
-
-.subtitle > svg{
-    width:30px;
-    height:30px;
-    fill: var(--text);
-}
-
-.subtitle > h3{
-    margin:0px;
-}
-
-.nameTitle{
-    font-family: Space Mono, monospace;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 2em;
-}
-
-
-
 h1 {
     margin: 0px;
     font-family: Space Mono, monospace;
+    font-size: 55px;
+    text-align: center;
 }
 
 h2{
-    margin:0px;
     font-family: Space Mono, monospace;
 }
 
@@ -85,7 +60,6 @@ span {
     padding-right: 5px;
 }
 
-/* h4::before{content:"\A"; white-space: pre-wrap;} */
 h4::after {
     content: "\A";
     white-space: pre-wrap;
@@ -93,6 +67,13 @@ h4::after {
 
 p {
     margin-bottom: 0;
+    text-align: justify;
+}
+
+.work{
+    border-left: 3px solid var(--text);
+    padding-left: 1rem;
+    margin-left: .5rem;
 }
 
 #center {
@@ -174,6 +155,19 @@ a:hover {
 
 .project {
     width: 48%;
+    margin-bottom: 2rem;
+}
+
+.project:hover{
+    animation-name:flicker;
+    animation-duration: 0.1s;
+    outline: 2px dashed lightslategray;
+    outline-offset: 10px;
+}
+
+@keyframes flicker {
+    0%      {outline: 2px dashed lightgray; outline-offset: 15px;}
+    100%    {outline: 2px dashed lightslategray;}
 }
 
 @media only screen and (max-width: 450px) {

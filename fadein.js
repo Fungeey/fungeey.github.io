@@ -18,8 +18,7 @@ var unfader = setInterval(function () {
   }
   window.scrollTo(0, 0);
 
-  unfade(elems[i]);
-  i++;
+  unfade(elems[i++]);
 }, 10);
 
 function unfade(element) {
@@ -32,8 +31,12 @@ function unfade(element) {
     }
 
     element.style.opacity = op;
-    element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+    // element.style.filter = 'alpha(opacity=' + op * 100 + ")";
     op += op * 0.1;
     element.style.transform = `translate(0px, ${(1 - op) * 3}px)`;
+    element.style.transform = 'translateZ(0)';
   }, 10);
+
+  element.style.transform = 'none';
+  // element.style.opacity = 1;
 }
