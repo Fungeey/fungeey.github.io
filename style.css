@@ -67,7 +67,7 @@ h4::after {
 
 p {
     margin-bottom: 0;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .work{
