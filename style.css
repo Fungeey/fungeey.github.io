@@ -88,9 +88,9 @@ p {
 }
 
 
-path {
+/* path {
     fill: transparent;
-}
+} */
 
 text {
     fill: var(--text);
