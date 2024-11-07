@@ -1,7 +1,7 @@
 :root {
     --text: #333333;
     --green: #C8D195;
-    --beige: #DDCFBC;
+    --beige: #deceb8;
     --radius: 1rem;
 }
 
@@ -22,11 +22,10 @@ body {
 }
 
 #main {
-    padding: 1rem;
     margin: 0px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: antiquewhite;
     background-image: url("img/dust.png");
     z-index: -1
@@ -39,7 +38,9 @@ h1 {
     text-align: center;
 }
 
-h2{
+h2 {
+    letter-spacing: 4px;
+    font-size: 1.75rem;
     font-family: Space Mono, monospace;
 }
 
@@ -48,13 +49,15 @@ h3 {
 }
 
 h4 {
-    font-weight: normal;
+    /* font-weight: normal; */
+    text-transform: uppercase;
+    font-family: Space Mono;
     display: inline;
-    background-color: var(--green);
+    /* background-color: var(--green); */
 }
 
 span {
-    background-color: var(--beige);
+    background-color: var(--green);
     border-radius: 1rem;
     padding-left: 5px;
     padding-right: 5px;
@@ -66,14 +69,32 @@ h4::after {
 }
 
 p {
-    margin-bottom: 0;
+    margin: 0;
     /* text-align: justify; */
 }
 
-.work{
+.work {
     border-left: 3px solid var(--text);
     padding-left: 1rem;
     margin-left: .5rem;
+}
+
+#header {
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: var(--beige);
+}
+
+
+path {
+    fill: transparent;
+}
+
+text {
+    fill: var(--text);
+    font-size: 40px;
 }
 
 #center {
@@ -101,9 +122,18 @@ p {
 
 #links {
     padding: 5px;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    gap:10px;
+    gap: 10px;
+}
+
+#pfp {
+    width: 60%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: 0px auto;
 }
 
 #links>a:hover {
@@ -116,8 +146,8 @@ hr {
 }
 
 .icon {
-    width:20px;
-    height:20px;
+    width: 20px;
+    height: 20px;
     fill: var(--text);
     border-radius: 1rem;
 }
@@ -146,7 +176,39 @@ a:hover {
     width: 100%;
 }
 
+.projHolder {
+    box-shadow: 0px 0px 30px lightgray;
+
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    width:calc(100% - 0.5rem);
+
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    left: -1.5rem;
+}
+
+.borderCorner{
+    --b: 3px;   /* thickness of the border */
+    --c: var(--text);
+    /* color of the border */
+    --w: 25px;
+    /* width of border */
+
+    border: var(--b) solid #0000;
+    /* space for the border */
+    --_g: #0000 90deg, var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+        conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0 0 / var(--_p),
+        conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
+}
+
 .projects {
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -158,16 +220,22 @@ a:hover {
     margin-bottom: 2rem;
 }
 
-.project:hover{
-    animation-name:flicker;
+.project:hover {
+    animation-name: flicker;
     animation-duration: 0.1s;
     outline: 2px dashed var(--text);
     outline-offset: 10px;
 }
 
 @keyframes flicker {
-    50%      {outline: 2px dashed var(--text); outline-offset: 12px;}
-    100%    {outline: 2px dashed var(--text);}
+    50% {
+        outline: 2px dashed var(--text);
+        outline-offset: 12px;
+    }
+
+    100% {
+        outline: 2px dashed var(--text);
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -188,10 +256,10 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--beige);
 }
 
-canvas{
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height:100%;
+canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
 }
