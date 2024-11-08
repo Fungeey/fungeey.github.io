@@ -10,7 +10,7 @@
 }
 
 * {
-    font-family: Inter;
+    font-family: Inter sans-serif;
     color: var(--text);
     line-height: 1.5;
 }
@@ -227,12 +227,12 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-.project:hover {
+/* .project:hover {
     animation-name: flicker;
     animation-duration: 0.1s;
     outline: 2px dashed var(--text);
     outline-offset: 10px;
-}
+} */
 
 .project:hover > h4 {
     background-color: var(--beige);
