@@ -53,7 +53,6 @@ h4 {
     text-transform: uppercase;
     font-family: Space Mono;
     display: inline;
-    /* background-color: var(--green); */
 }
 
 span {
@@ -225,6 +224,10 @@ a:hover {
     animation-duration: 0.1s;
     outline: 2px dashed var(--text);
     outline-offset: 10px;
+}
+
+.project:hover > h4 {
+    background-color: var(--beige);
 }
 
 @keyframes flicker {
