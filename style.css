@@ -78,18 +78,23 @@ p {
     margin-left: .5rem;
 }
 
-#header {
-    padding: 1rem;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
+.button{
+    text-align: center;
+    border:none;
     background-color: var(--beige);
+    border-radius: 0.5rem;
+    padding:10px;
+    box-shadow: 0 0 30px lightgray;
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
 }
 
-
-/* path {
-    fill: transparent;
-} */
+.button:hover{
+    background-color: var(--green);
+    outline: 2px solid var(--text);
+}
 
 text {
     fill: var(--text);
